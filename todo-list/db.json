@@ -1,0 +1,117 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "caption": "UI/UX Design Task",
+      "date": "2025-02-01",
+      "categoryId": "1",
+      "priorityId": "3",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "caption": "Submit project report",
+      "date": "2025-02-03",
+      "categoryId": "2",
+      "priorityId": "3",
+      "completed": true
+    },
+    {
+      "id": "3",
+      "caption": "Read 10 pages of book",
+      "date": "2025-02-06",
+      "categoryId": "4",
+      "priorityId": "1",
+      "completed": false
+    },
+    {
+      "id": "4",
+      "caption": "Buy groceries for the week",
+      "date": "2025-02-05",
+      "categoryId": "5",
+      "priorityId": "2",
+      "completed": true
+    },
+    {
+      "id": "5",
+      "caption": "Learn Vue.js",
+      "date": "2025-02-07",
+      "categoryId": "5",
+      "priorityId": "2",
+      "completed": false
+    }
+  ],
+  "priorities": [
+    {
+      "id": "1",
+      "caption": "Low",
+      "cssColorName": "bg-priority-low"
+    },
+    {
+      "id": "2",
+      "caption": "Medium",
+      "cssColorName": "bg-priority-medium"
+    },
+    {
+      "id": "3",
+      "caption": "High",
+      "cssColorName": "bg-priority-high"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "caption": "Work",
+      "colorText": "text-sky-500",
+      "bgColor": "bg-sky-50"
+    },
+    {
+      "id": "2",
+      "caption": "Education",
+      "colorText": "text-violet-500",
+      "bgColor": "bg-violet-50"
+    },
+    {
+      "id": "3",
+      "caption": "Shopping",
+      "colorText": "text-red-500",
+      "bgColor": "bg-red-50"
+    },
+    {
+      "id": "4",
+      "caption": "Personal",
+      "colorText": "text-yellow-500",
+      "bgColor": "bg-yellow-50"
+    },
+    {
+      "id": "5",
+      "caption": "Home",
+      "colorText": "text-green-500",
+      "bgColor": "bg-green-50"
+    },
+    {
+      "id": "6",
+      "caption": "Custom",
+      "colorText": "text-neutral-500",
+      "bgColor": "bg-neutral-50"
+    }
+  ],
+  "tabs": [
+    {
+      "id": "1",
+      "title": "To-do",
+      "isActive": true,
+      "todos": [],
+      "countTodos": 0,
+      "typeTodos": "tasksToStart"
+    },
+    {
+      "id": "2",
+      "title": "Completed",
+      "isActive": false,
+      "todos": [],
+      "countTodos": 0,
+      "typeTodos": "tasksCompleted"
+    }
+  ]
+}

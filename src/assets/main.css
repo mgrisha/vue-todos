@@ -1,0 +1,117 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-main-todo-50: #f6ebfb;
+  --color-main-todo-100: #ebd6f3;
+  --color-main-todo-200: #d6aceb;
+  --color-main-todo-300: #c285e0;
+  --color-main-todo-400: #ac5cd7;
+  --color-main-todo-500: #9a33cc;
+  --color-main-todo-600: #7929a4;
+  --color-main-todo-700: #5d1e79;
+  --color-main-todo-800: #3e1452;
+  --color-main-todo-900: #1f0a29;
+  --color-main-todo-950: #0d0512;
+
+  --color-gray-todo-50: #f7f7f7;
+  --color-gray-todo-100: #eeeeee;
+  --color-gray-todo-200: #dedede;
+  --color-gray-todo-300: #cccccc;
+  --color-gray-todo-400: #bababa;
+  --color-gray-todo-500: #aaaaaa;
+  --color-gray-todo-600: #878787;
+  --color-gray-todo-700: #666666;
+  --color-gray-todo-800: #454545;
+  --color-gray-todo-900: #212121;
+  --color-gray-todo-950: #111111;
+
+  --color-priority-low: #34c759;
+  --color-priority-medium: #ff9500;
+  --color-priority-high: #ff3b30;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+#app {
+  height: 100%;
+}
+
+.checkbox-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+}
+
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.3rem;
+  background-color: transparent;
+  border: 1px solid var(--color-gray-todo-500);
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+}
+
+@media (hover: hover) {
+  /* On mouse-over, add a grey background color */
+  .checkbox-label:hover input ~ .checkbox-checkmark {
+    background-color: var(--color-main-todo-300);
+    border-color: var(--color-main-todo-300);
+  }
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-label input:checked ~ .checkbox-checkmark {
+  background-color: var(--color-main-todo-600);
+  border-color: var(--color-main-todo-600);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-label input:checked ~ .checkbox-checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-label .checkbox-checkmark:after {
+  left: 8px;
+  top: 3px;
+  width: 7px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

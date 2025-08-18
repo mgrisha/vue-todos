@@ -1,0 +1,19 @@
+{
+  "priorities": [
+    {
+      "id": 1,
+      "caption": "Low",
+      "cssColorName": "bg-priority-low"
+    },
+    {
+      "id": 2,
+      "caption": "Medium",
+      "cssColorName": "bg-priority-medium"
+    },
+    {
+      "id": 3,
+      "caption": "High",
+      "cssColorName": "bg-priority-high"
+    }
+  ]
+}

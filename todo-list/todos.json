@@ -1,0 +1,44 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "caption": "UI/UX Design Task",
+      "date": "2025-02-01",
+      "categoryId": 1,
+      "priorityId": 3,
+      "completed": false
+    },
+    {
+      "id": 2,
+      "caption": "Submit project report",
+      "date": "2025-02-03",
+      "categoryId": 2,
+      "priorityId": 3,
+      "completed": false
+    },
+    {
+      "id": 3,
+      "caption": "Read 10 pages of book",
+      "date": "2025-02-06",
+      "categoryId": 4,
+      "priorityId": 1,
+      "completed": false
+    },
+    {
+      "id": 4,
+      "caption": "Buy groceries for the week",
+      "date": "2025-02-05",
+      "categoryId": 5,
+      "priorityId": 2,
+      "completed": false
+    },
+    {
+      "id": 5,
+      "caption": "Learn Vue.js",
+      "date": "2025-02-07",
+      "categoryId": 2,
+      "priorityId": 3,
+      "completed": false
+    }
+  ]
+}

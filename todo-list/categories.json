@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "catption": "Work"
+    },
+    {
+      "id": 2,
+      "catption": "Education"
+    },
+    {
+      "id": 3,
+      "catption": "Shopping"
+    },
+    {
+      "id": 4,
+      "catption": "Personal"
+    },
+    {
+      "id": 5,
+      "catption": "Home"
+    },
+    {
+      "id": 6,
+      "catption": "Custom"
+    }
+  ]
+}
