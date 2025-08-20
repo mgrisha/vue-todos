@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col h-full relative">
     <div>
-      <h1 class="text-center text-xl font-bold text-main-todo-600">TODO List App 777</h1>
+      <h1 class="text-center text-xl font-bold text-main-todo-600">TODO List App</h1>
     </div>
     <hr class="my-2 text-gray-todo-100" />
     <div class="flex flex-col h-full overflow-hidden">
