@@ -64,7 +64,7 @@ router.beforeEach(async (to, from, next) => {
 
   updateSelectedTodos()
 
-  document.title = `${to.meta.title} | TODO List App 2`
+  document.title = `${to.meta.title} | TODO List App`
   next()
 })
 
