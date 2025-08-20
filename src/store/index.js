@@ -73,8 +73,8 @@ export const useTodosStore = defineStore('todos', () => {
 
   const deleteTodo = async (id) => {
     const { status } = await axios.delete(`https://42cfcc8765a6c5d4.mokky.dev/todos/${id}`)
-    if (status == 200 || status === 201 || status === 202) {
-      todos.value = todos.value.filter((todo) => todo.id !== id)
+    if (status === 200 || status === 201 || status === 202) {
+      todos.value = todos.value.filter((todo) => String(todo.id) !== String(id))
       updateTabs()
     }
     return status

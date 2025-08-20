@@ -5,7 +5,7 @@ import { useTodosStore } from '@/store'
 import { storeToRefs } from 'pinia'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/vue-todos/'),
   routes: [
     {
       path: '/',
